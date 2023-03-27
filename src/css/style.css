@@ -1,0 +1,25 @@
+@import 'reset.css';
+@import 'sidebar.css';
+@import 'postMain.css';
+
+:root[color-theme='light'] {
+  --background: white;
+  --sideBar: #f7f6f3;
+  --text-color: black;
+}
+
+:root[color-theme='dark'] {
+  --background: #191919;
+  --sideBar: #23292b;
+  --text-color: white;
+}
+
+body {
+  background-color: var(--background);
+  color: var(--text-color);
+}
+
+#app {
+  display: flex;
+  flex-direction: row;
+}
